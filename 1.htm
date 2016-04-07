@@ -4,7 +4,13 @@
 <script type="text/javascript">
 function vaciar () {
   document.getElementById("n1").value = "";
+
 }
+function cubo() {
+  var num = document.getElementById("n1");
+  num.value = num.value* num.value * num.value;
+}
+
 function cuadrado() {
   var num = document.getElementById("n1");
   num.value = num.value * num.value;
@@ -14,6 +20,7 @@ function cuadrado() {
 <body>
   Número:
   <input type="text" id="n1" onclick="vaciar()"><p>
+ <button onclick="cubo()"> cubo </button>
 
   <button onclick="cuadrado()"> x<sup>2</sup> </button>
 </body>
